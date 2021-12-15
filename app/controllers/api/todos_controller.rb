@@ -21,7 +21,7 @@ class Api::TodosController < ApplicationController
     if @todo.save 
       render json: @todo
     else
-      # 401 error in the server here is where the error is 
+      # 422 error in the server here is where the error is 
       render json: { errors: @todo.errors }, status: :unprocessable_entity
     end
   end
