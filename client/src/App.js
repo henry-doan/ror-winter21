@@ -59,7 +59,7 @@ const App = () => {
 
   return (
     <>
-      <h1>My Todo List </h1>
+      <h1>Your Todo List </h1>
       <TodoForm addTodo={addTodo} />
       <TodoList 
         updateTodo={updateTodo} 
